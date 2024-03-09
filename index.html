@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="flex">
+    <div class="spacer layer flip"></div>
+    <header class="flex-row">
+      <img src="./stilogo.jpg" alt="" width="100px" />
+      <h1>Enrollment Form</h1>
+    </header>
+    <main class="container flex">
+      <h2>Personal Information</h2>
+      <div class="border"></div>
+
+      <section class="text-container flex">
+        <div class="text">
+          <label>First Name: <span class="red-text">*</span> </label>
+          <input type="text" required />
+          <label>Last Name: <span class="red-text">*</span> </label>
+          <input type="text" required />
+          <label>Middle Name: </label>
+          <input type="text" />
+        </div>
+        <div class="text">
+          <label>Current Address: <span class="red-text">*</span></label>
+          <input type="email" pattern=".+@example\.com" size="40" required />
+
+          <label>Mobile No.: </label>
+          <input type="text" />
+        </div>
+      </section>
+
+      <h2>Payment Terms</h2>
+      <div class="border"></div>
+
+      <section class="radio-container">
+        <input type="radio" id="cash" name="payment" checked />
+        <label for="cash">Cash</label>
+        <input type="radio" id="low-dp" name="payment" />
+        <label for="low-dp">Low Downpayment</label>
+        <input type="radio" id="low-mp" name="payment" />
+        <label for="low-mp">Low Monthly Payment</label>
+      </section>
+
+      <section class="button-container">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </section>
+    </main>
+
+    <div class="spacer layer"></div>
+  </body>
+</html>
